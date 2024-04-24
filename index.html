@@ -27,6 +27,18 @@
         .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-floating) {
             color: #4a148c;
         }
+                .link-icon {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .social-links a {
+            display: inline-block;
+            padding: 8px;
+            color: #5e35b1;
+        }
+        .social-links a:hover {
+            color: #7e57c2;
+        }
     </style>
 </head>
 <body>
@@ -41,9 +53,11 @@
         <section id="about" class="section">
             <h2>About Me</h2>
             <p>I am a graduate student at the University of Southern California, specializing in Artificial Intelligence, eager to apply advanced AI and ML techniques in real-world applications.</p>
-            <p>Email: <a href="mailto:shoumikgandre@gmail.com">shoumikgandre@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/shoumikgandre">linkedin.com/in/shoumikgandre</a></p>
-            <p>GitHub: <a href="https://github.com/Shoumik-Gandre">github.com/Shoumik-Gandre</a></p>
+            <div class="social-links">
+                <a href="mailto:shoumikgandre@gmail.com" target="_blank"><i class="material-icons link-icon">email</i>Email</a>
+                <a href="https://linkedin.com/in/shoumikgandre" target="_blank"><i class="material-icons link-icon">link</i>LinkedIn</a>
+                <a href="https://github.com/Shoumik-Gandre" target="_blank"><i class="material-icons link-icon">code</i>GitHub</a>
+            </div>
         </section>
         <section id="education" class="section">
             <h2>Education</h2>
