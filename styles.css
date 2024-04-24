@@ -1,0 +1,50 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background-color: #1a202c;
+    background-image: linear-gradient(315deg, #1a202c 0%, #4a5568 74%);
+}
+main {
+    background-color: #edf2f7;
+    color: #2d3748;
+}
+section {
+    padding: 2rem 0;
+}
+h1, h2 {
+    color: #cbd5e0;
+}
+a {
+    color: #63b3ed;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #3182ce;
+}
+button {
+    background-color: #4a5568;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #2d3748;
+}
+input, textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 0.25rem;
+    border: 2px solid #cbd5e0;
+    width: calc(100% - 1rem);
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #63b3ed;
+}
+footer {
+    background-color: #2d3748;
+    color: #cbd5e0;
+}
