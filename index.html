@@ -4,64 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoumik Gandre - Portfolio</title>
-    <link href="styles.css" rel="stylesheet">
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            background: #f4f4f4;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+        .container {
+            max-width: 90%;
+        }
+        .card .card-content {
+            padding: 20px 24px;
+        }
+        .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-floating) {
+            color: #4a148c;
+        }
+    </style>
 </head>
 <body>
-    <header class="text-center py-6">
-        <h1 class="text-3xl font-bold">Shoumik Atul Gandre</h1>
-        <p class="text-xl">Computer Scientist Specializing in Artificial Intelligence</p>
-        <nav class="mt-4">
-            <a href="#about" class="mx-2">About</a> | 
-            <a href="#education" class="mx-2">Education</a> | 
-            <a href="#skills" class="mx-2">Skills</a> | 
-            <a href="#experience" class="mx-2">Experience</a> | 
-            <a href="#projects" class="mx-2">Projects</a> | 
-            <a href="#contact" class="mx-2">Contact</a>
+    <header>
+        <nav class="nav-wrapper purple darken-4">
+            <div class="container">
+                <a href="#" class="brand-logo center">Shoumik Gandre</a>
+            </div>
         </nav>
     </header>
-    <main>
-        <section id="about" class="text-center">
-            <h2 class="text-2xl font-semibold">About Me</h2>
-            <p class="mt-4">I am a graduate student at the University of Southern California, specializing in Artificial Intelligence, eager to apply advanced AI and ML techniques in real-world applications.</p>
-            <p class="mt-4">Email: <a href="mailto:shoumikgandre@gmail.com">shoumikgandre@gmail.com</a></p>
+    <main class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am a graduate student at the University of Southern California, specializing in Artificial Intelligence, eager to apply advanced AI and ML techniques in real-world applications.</p>
+            <p>Email: <a href="mailto:shoumikgandre@gmail.com">shoumikgandre@gmail.com</a></p>
             <p>LinkedIn: <a href="https://linkedin.com/in/shoumikgandre">linkedin.com/in/shoumikgandre</a></p>
             <p>GitHub: <a href="https://github.com/Shoumik-Gandre">github.com/Shoumik-Gandre</a></p>
         </section>
-        <section id="education" class="text-center">
-            <h2 class="text-2xl font-semibold">Education</h2>
-            <p class="mt-4">Master of Science in Computer Science (Artificial Intelligence), University of Southern California, GPA: 3.61/4.0</p>
-            <p class="mt-4">Bachelor of Engineering in Information Technology, Dwarkadas J. Sanghvi College of Engineering, GPA: 3.75/4.0</p>
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title"><i class="material-icons left">school</i>Master of Science</span>
+                    <p>Computer Science (Artificial Intelligence), University of Southern California, GPA: 3.61/4.0</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title"><i class="material-icons left">school</i>Bachelor of Engineering</span>
+                    <p>Information Technology, Dwarkadas J. Sanghvi College of Engineering, GPA: 3.75/4.0</p>
+                </div>
+            </div>
         </section>
-        <section id="skills" class="text-center">
-            <h2 class="text-2xl font-semibold">Skills</h2>
-            <p class="mt-4">Programming Languages: Python, Java, C/C++, SQL, R, JavaScript, MATLAB, SPARQL</p>
-            <p class="mt-4">Machine Learning Tools: PyTorch, TensorFlow, Keras, Scikit-learn, Pandas, XGBoost</p>
-            <p class="mt-4">Web Development: HTML, CSS, JavaScript, Angular, React, Django</p>
+        <section id="experience" class="section">
+            <h2>Professional Experience</h2>
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title"><i class="material-icons left">work</i>Junior Data Scientist</span>
+                    <p>NLP at Entertainment Technology Center, University of Southern California (2024)</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title"><i class="material-icons left">work</i>NLP Course Producer</span>
+                    <p>University of Southern California (2023)</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title"><i class="material-icons left">work</i>AI/ML Intern</span>
+                    <p>DeepUSC Labs (2023)</p>
+                </div>
+            </div>
+            <div class="card">
+                <div the="card-content">
+                    <span class="card-title"><i class="material-icons left">work</i>AI Developer Intern</span>
+                    <p>Tata Consultancy Services (2021)</p>
+                </div>
+            </div>
         </section>
-        <section id="experience" class="text-center">
-            <h2 class="text-2xl font-semibold">Professional Experience</h2>
-            <p class="mt-4">Junior Data Scientist, NLP at Entertainment Technology Center, University of Southern California (2024)</p>
-            <p class="mt-4">Natural Language Processing Course Producer, University of Southern California (2023)</p>
-            <p class="mt-4">AI/ML Intern, DeepUSC Labs (2023)</p>
-            <p class="mt-4">AI Developer Intern, Tata Consultancy Services (2021)</p>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title"><i class="material-icons left">build</i>Named Entity Recognition</span>
+                    <p>Utilized Bidirectional LSTM-CNN and BERT models, achieving high F1 scores.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title"><i class="material-icons left">build</i>Sentiment Analysis</span>
+                    <p>Developed a BERT-based model for analyzing Amazon product reviews with high accuracy.</p>
+                </div>
+            </div>
         </section>
-        <section id="projects" class="text-center">
-            <h2 class="text-2xl font-semibold">Projects</h2>
-            <p class="mt-4">Named Entity Recognition: Enhanced LSTM-CNN and BERT models achieving high F1 scores.</p>
-            <p class="mt-4">Sentiment Analysis: Developed a BERT-based model for analyzing Amazon product reviews with high accuracy.</p>
-        </section>
-        <section id="contact" class="text-center">
-            <h2 class="text-2xl font-semibold">Contact Me</h2>
-            <form action="mailto:shoumikgandre@gmail.com" method="POST" enctype="text/plain" class="mt-4">
-                <input type="text" name="name" placeholder="Your Name" required class="input">
-                <input type="email" name="email" placeholder="Your Email" required class="input">
-                <textarea name="message" placeholder="Your Message" required class="textarea"></textarea>
-                <button type="submit" class="button mt-4">Send</button>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <form action="mailto:shoumikgandre@gmail.com" method="POST" enctype="text/plain">
+                <div class="input-field">
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="input-field">
+                    <textarea name="message" id="message" class="materialize-textarea" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="btn-large waves-effect waves-light purple darken-4">Send</button>
             </form>
         </section>
     </main>
-    <footer class="text-center py-4">
-        © 2024 Shoumik Atul Gandre
+    <footer class="page-footer purple darken-4">
+        <div class="container">
+            © 2024 Shoumik Atul Gandre
+        </div>
     </footer>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
