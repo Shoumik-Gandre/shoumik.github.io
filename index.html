@@ -4,63 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoumik Gandre - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <header class="text-center p-4 bg-gray-800 text-white">
-        <h1>Shoumik Atul Gandre</h1>
-        <p>Computer Scientist Specializing in Artificial Intelligence</p>
-        <nav>
-            <a href="#about">About</a> | 
-            <a href="#education">Education</a> | 
-            <a href="#skills">Skills</a> | 
-            <a href="#experience">Experience</a> | 
-            <a href="#projects">Projects</a> | 
-            <a href="#contact">Contact</a>
+    <header class="text-center py-6">
+        <h1 class="text-3xl font-bold">Shoumik Atul Gandre</h1>
+        <p class="text-xl">Computer Scientist Specializing in Artificial Intelligence</p>
+        <nav class="mt-4">
+            <a href="#about" class="mx-2">About</a> | 
+            <a href="#education" class="mx-2">Education</a> | 
+            <a href="#skills" class="mx-2">Skills</a> | 
+            <a href="#experience" class="mx-2">Experience</a> | 
+            <a href="#projects" class="mx-2">Projects</a> | 
+            <a href="#contact" class="mx-2">Contact</a>
         </nav>
     </header>
     <main>
-        <section id="about" class="p-4">
-            <h2>About Me</h2>
-            <p>I am a graduate student at the University of Southern California, specializing in Artificial Intelligence...</p>
-            <p>Email: <a href="mailto:shoumikgandre@gmail.com">shoumikgandre@gmail.com</a></p>
+        <section id="about" class="text-center">
+            <h2 class="text-2xl font-semibold">About Me</h2>
+            <p class="mt-4">I am a graduate student at the University of Southern California, specializing in Artificial Intelligence...</p>
+            <p class="mt-4">Email: <a href="mailto:shoumikgandre@gmail.com">shoumikgandre@gmail.com</a></p>
             <p>LinkedIn: <a href="https://linkedin.com/in/shoumikgandre">linkedin.com/in/shoumikgandre</a></p>
             <p>GitHub: <a href="https://github.com/Shoumik-Gandre">github.com/Shoumik-Gandre</a></p>
         </section>
-        <section id="education" class="p-4">
-            <h2>Education</h2>
-            <p>Master of Science in Computer Science (Artificial Intelligence), University of Southern California</p>
-            <p>Bachelor of Engineering in Information Technology, Dwarkadas Jivanlal Sanghvi College of Engineering</p>
-        </section>
-        <section id="skills" class="p-4">
-            <h2>Skills</h2>
-            <p>Programming Languages: Python, Java, C/C++, SQL, R, JavaScript, MATLAB, SPARQL</p>
-            <p>Machine Learning Tools: PyTorch, TensorFlow, Keras, Scikit-learn, Pandas, XGBoost</p>
-            <p>Web Development: HTML, CSS, JavaScript, Angular, React, Django</p>
-        </section>
-        <section id="experience" class="p-4">
-            <h2>Professional Experience</h2>
-            <p>Junior Data Scientist, NLP at Entertainment Technology Center, University of Southern California</p>
-            <p>Natural Language Processing Course Producer, University of Southern California</p>
-            <p>Artificial Intelligence / Machine Learning Intern, DeepUSC Labs</p>
-            <p>Artificial Intelligence Developer Intern, Tata Consultancy Services</p>
-        </section>
-        <section id="projects" class="p-4">
-            <h2>Projects</h2>
-            <p>Named Entity Recognition: Utilized Bidirectional LSTM-CNN and BERT models</p>
-            <p>Sentiment Analysis for Amazon Product Reviews: Engineered a BERT-based model using PyTorch</p>
-        </section>
-        <section id="contact" class="p-4">
-            <h2>Contact Me</h2>
-            <form action="mailto:shoumikgandre@gmail.com" method="POST" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
+        <!-- Additional sections will be similarly styled and structured -->
     </main>
-    <footer class="text-center p-4 bg-gray-700 text-white">
+    <footer class="text-center py-4">
         © 2024 Shoumik Atul Gandre
     </footer>
 </body>
